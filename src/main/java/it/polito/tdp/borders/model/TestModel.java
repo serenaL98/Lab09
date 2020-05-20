@@ -1,5 +1,8 @@
 package it.polito.tdp.borders.model;
 
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.SimpleGraph;
+
 public class TestModel {
 
 	public static void main(String[] args) {
@@ -8,8 +11,12 @@ public class TestModel {
 
 		System.out.println("TestModel -- TODO");
 		
-//		System.out.println("Creo il grafo relativo al 2000");
-//		model.createGraph(2000);
+		System.out.println("Creo il grafo relativo al 1200");
+		model.creaGrafo(1200);
+		
+		System.out.println("Stampo vertici e i rispettivi gradi:\n"+model.statiEconfini());
+		
+		System.out.println("Stampo le componenti relative ai vertici:\n"+model.componenti());
 		
 //		List<Country> countries = model.getCountries();
 //		System.out.format("Trovate %d nazioni\n", countries.size());
